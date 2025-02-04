@@ -23,11 +23,11 @@ DEF=`cat /proc/sys/vm/swappiness`
 DEF=`getprop ro.lmk.swap_free_low_percentage`
 
 # swappiness
-SWPS=100
+SWPS=56
 echo "$SWPS" > /proc/sys/vm/swappiness
 
 # zram
-DISKSIZE=3G
+DISKSIZE=2G
 #%MemTotalStr=`cat /proc/meminfo | grep MemTotal`
 #%MemTotal=${MemTotalStr:16:8}
 #%let VALUE="$MemTotal * VAR / 100"
